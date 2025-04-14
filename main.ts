@@ -13,11 +13,11 @@ function generateId(): string {
   return Math.random().toString(36).substr(2, 6);
 }
 
-const illegalHeadingCharsRegex = /[!"#$%&()*+,.:;<=>?@^`{|}~\/\[\]\\]/g;
+const illegalHeadingCharsRegex = /[!"#$%&()*+,:;<=>?@^`{|}~\/\[\]\\]/g;
 function sanitizeHeading(heading: string) {
   return heading
-    .replace(illegalHeadingCharsRegex, "-")
-    .replace(/\s+/g, "-")
+    .replace(illegalHeadingCharsRegex, "")
+    .replace(/\s+/g, "")
     .trim();
 }
 
