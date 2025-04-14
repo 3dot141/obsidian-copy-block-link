@@ -16,8 +16,8 @@ function generateId(): string {
 const illegalHeadingCharsRegex = /[!"#$%&()*+,.:;<=>?@^`{|}~\/\[\]\\]/g;
 function sanitizeHeading(heading: string) {
   return heading
-    .replace(illegalHeadingCharsRegex, " ")
-    .replace(/\s+/g, " ")
+    .replace(illegalHeadingCharsRegex, "-")
+    .replace(/\s+/g, "-")
     .trim();
 }
 

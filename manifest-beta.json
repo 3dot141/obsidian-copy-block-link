@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-3dot141-copy-block-link",
+	"name": "My Copy Block Link",
+	"version": "1.0.4",
+	"minAppVersion": "0.12.12",
+	"description": "Get links to blocks and headings from Obsidian's right click menu",
+  	"author": "Yes365",
+  	"authorUrl": "https://github.com/3dot141",
+	"isDesktopOnly": false
+}
